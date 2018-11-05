@@ -32,11 +32,22 @@ require 'inc/getProduct.php';
       </ul>
     </div>
   </nav>
-  <ul id="slide-out" class="sidenav">
-     <li><a class="waves-effect">Subheader</a></li>
-     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-   </ul>
-   <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  <?php 
+  if((!isset($_SESSION["userId"]) && !isset($_SESSION["username"]))){
+    echo "<ul id=\"slide-out\" class=\"sidenav\">
+    <li><a href=\"signUp.php\" class=\"waves-effect\">Регистрация</a></li>
+    <li><a class=\"waves-effect\" href=\"index.php\">Влез</a></li>
+  </ul>
+  <a href=\"#\" data-target=\"slide-out\" class=\"sidenav-trigger\"><i class=\"material-icons\">menu</i></a>";
+  }else{
+    echo "<ul id=\"slide-out\" class=\"sidenav\">
+    <li><a href=\"addProduct.php\" class=\"waves-effect\">Добави продукт</a></li>
+    <li><a class=\"waves-effect\" href=\"logOut.php\">Излез</a></li>
+  </ul>
+  <a href=\"#\" data-target=\"slide-out\" class=\"sidenav-trigger\"><i class=\"material-icons\">menu</i></a>";
+  }
+  
+  ?>
 
 </header>
 

@@ -33,7 +33,7 @@ require 'inc/getProduct.php';
     </div>
   </nav>
   <?php 
-  if((!isset($_SESSION["userId"]) && !isset($_SESSION["username"]))){
+  if(( !isset( $_SESSION["userId"] ) && !isset( $_SESSION["username"] ) ) ){
     echo "<ul id=\"slide-out\" class=\"sidenav\">
     <li><a href=\"signUp.php\" class=\"waves-effect\">Регистрация</a></li>
     <li><a class=\"waves-effect\" href=\"index.php\">Влез</a></li>

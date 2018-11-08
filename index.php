@@ -1,4 +1,14 @@
 <?php
+// define('addProductFormPage', TRUE);
+// define('connectionPage', TRUE);
+// define('editPage',TRUE);
+// define('helpersPage',TRUE);
+// define('loginPage',TRUE);
+// define('productsPage', TRUE);
+// define('searchBarPage', TRUE);
+// define('signUpForm',TRUE);
+// define('headerPage',TRUE);
+
 require 'header.php';
 require 'inc/connection.php';
 require 'inc/helpers.php';

@@ -1,5 +1,4 @@
-
-  <!-- Script to prevent reloading the page -->
+ <!-- Script to prevent reloading the page -->
   <script>
     if ( window.history.replaceState ) {
         window.history.replaceState( null, null, window.location.href );

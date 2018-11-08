@@ -1,7 +1,6 @@
 <?php
 session_start();
 require 'inc/connection.php';
-require 'inc/getProduct.php';
 ?>
 <!DOCTYPE html>
 <html lang="bg">

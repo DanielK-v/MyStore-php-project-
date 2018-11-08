@@ -2,6 +2,7 @@
 header('Content-Type: text/html; charset=utf-8');
 require 'connection.php';
 $searchSQL="";
+
 require 'searchBar.php';
 ?>
 
@@ -25,18 +26,19 @@ require 'searchBar.php';
     
     //Setting encoding to utf8 so that Bulgarian words can be displayed correctly!
     $connection->query("set NAMES utf8");
-    $sql = "SELECT products.prod_id,products.prod_name, products.prod_desc, products.price_1, products.price_2, products.prod_amount, products.prod_code,products.image, categories.cat_name
+    
+    $sql = "SELECT *
             FROM products
             INNER JOIN categories
             ON products.cat_id = categories.cat_id
             ORDER BY products.prod_id DESC";
-    $result = $connection->query($sql) or die($connection->error);
+    $result = $connection->query( $sql ) or die( $connection->error );
 
     if(isset($userSearch)){
         //Displaying searched results
         $sql = "SELECT * FROM `products` INNER JOIN categories  WHERE prod_code LIKE '%$userSearch%'";
-        $result = $connection->query($sql) or die($connection->error);
-        while ($row = $result->fetch_assoc()) {
+        $result = $connection->query( $sql ) or die( $connection->error );
+        while ( $row = $result->fetch_assoc() ) {
             echo "<tr>";
             echo "<td>".$row["prod_name"]."</td>";
             echo "<td>".$row["prod_desc"]."</td>";
@@ -45,16 +47,21 @@ require 'searchBar.php';
             echo "<td>".$row["prod_amount"]."</td>";
             echo "<td>".$row["cat_name"]."</td>";
             echo "<td>".$row["prod_code"]."</td>";
-            echo "<td> <img src=\"uploads/".$row["image"]."\"width=\"30rem \"height=\"30rem\"></td>";
-            echo "<td><button id=deleteBtn".$row["prod_id"]." type=\"submit\" formmethod=\"get\"><i class=\"small material-icons\">delete</i></button></td>";
-            echo "<td><button id=editBtn".$row["prod_id"]." type=\"submit\" formmethod=\"get\"><i class=\"small material-icons\">edit</i></button></td>";
+            if(!empty( $row["image"] ) ){
+                echo "<td> <img src=\"uploads/".$row["image"]."\"width=\"30rem \"height=\"30rem\"></td>";  
+            }else{
+                echo "<td> <p>Няма снимка </p> </td>";
+            } 
+            echo "<td><a href='delete.php?id=".$row["prod_id"]."'><i class=\"small material-icons\">delete</i></a></td>";
+            echo "<td><a href='edit.php?id=".$row["prod_id"]."'><i class=\"small material-icons\">edit</i></a></td>";
+            
             echo "</tr>";
         }
         $result->close();
         
     }else{
         //Displaying all results
-        while ($row = $result->fetch_assoc()) {
+        while ( $row = $result->fetch_assoc() ) {
             echo "<tr>";
             echo "<td>".$row["prod_name"]."</td>";
             echo "<td>".$row["prod_desc"]."</td>";
@@ -63,9 +70,13 @@ require 'searchBar.php';
             echo "<td>".$row["prod_amount"]."</td>";
             echo "<td>".$row["cat_name"]."</td>";
             echo "<td>".$row["prod_code"]."</td>";
-            echo "<td> <img src=\"uploads/".$row["image"]."\"width=\"30rem \"height=\"30rem\"></td>";
-            echo "<td><button id=deleteBtn".$row["prod_id"]." type=\"submit\" formmethod=\"get\"><i class=\"small material-icons\">delete</i></button></td>";
-            echo "<td><button id=editBtn".$row["prod_id"]." type=\"submit\" formmethod=\"get\"><i class=\"small material-icons\">edit</i></button></td>";
+            if(!empty( $row["image"] ) ){
+                echo "<td> <img src=\"uploads/".$row["image"]."\"width=\"30rem \"height=\"30rem\"></td>";  
+            }else{
+                echo "<td> <p>Няма снимка </p> </td>";
+            } 
+            echo "<td><a href='delete.php?id=".$row["prod_id"]."'><i class=\"small material-icons\">delete</i></a></td>";
+            echo "<td><a href='edit.php?id=".$row["prod_id"]."'><i class=\"small material-icons\">edit</i></a></td>";
             echo "</tr>";
         }
         $result->close();

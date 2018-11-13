@@ -50,7 +50,7 @@
         </div>
 
       <div class="center-align">
-        <button id ="add-product-btn"class="btn waves-effect waves-light" type="submit" name="add-product-btn">
+        <button id ="add-product-btn"class="btn waves-effect waves-light #b71c1c red darken-4" type="submit" name="add-product-btn">
           <i class="material-icons right">add</i> Добави
         </button>
       </div>

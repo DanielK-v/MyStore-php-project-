@@ -15,7 +15,7 @@
         </div>
 
          <div class="center-align">
-         <button id ="login-btn"class="btn waves-effect waves-light" type="submit" name="login-btn">Влез
+         <button id ="login-btn"class="btn waves-effect waves-light #b71c1c red darken-4" type="submit" name="login-btn">Влез
            <i class="material-icons right">send</i>
          </button>
        </div>

@@ -17,6 +17,7 @@ if(isset($_POST['add-product-btn'])){
   $productCode = test_input( $_POST['product-code'] );
   $productCat = test_input( $_POST['product-cat'] );
 
+  //Image of a product
   $target = "uploads/".baseName($_FILES['product-image']['name']);
   $image = $_FILES['product-image']['name'];
   if( move_uploaded_file( $_FILES['product-image']['tmp_name'], $target ) ){
@@ -35,8 +36,7 @@ if(isset($_POST['add-product-btn'])){
     $chekedProdCode = $productCode;
   }
 
-  $sql = "SET NAMES utf8";
-  $connection->query($sql);
+  $connection->query("SET NAMES utf8");  //Display Bulgarian words properly
 
   if( isset( $productName ) && isset( $priceFirst ) && isset( $priceSecond) && isset( $productAmount) && isset( $chekedProdCode) ){
     if( $stmt = $connection->prepare( "INSERT into products (cat_id,prod_name,prod_desc,price_1,price_2,prod_amount,prod_code,image) VALUES (?,?,?,?,?,?,?,?)" ) ){

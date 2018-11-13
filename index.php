@@ -1,14 +1,4 @@
 <?php
-// define('addProductFormPage', TRUE);
-// define('connectionPage', TRUE);
-// define('editPage',TRUE);
-// define('helpersPage',TRUE);
-// define('loginPage',TRUE);
-// define('productsPage', TRUE);
-// define('searchBarPage', TRUE);
-// define('signUpForm',TRUE);
-// define('headerPage',TRUE);
-
 require 'header.php';
 require 'inc/connection.php';
 require 'inc/helpers.php';
@@ -18,7 +8,7 @@ $login = "";
 
 if( isset( $_POST["login-btn"] ) ){
 
-    if( $_SERVER["REQUEST_METHOD"] == "POST" ){
+    if( $_SERVER["REQUEST_METHOD"] === "POST" ){
 
       $login = test_input( $_POST["login-username"] );
       $psw = test_input( $_POST["login-password"] );
@@ -43,7 +33,7 @@ if( isset( $_POST["login-btn"] ) ){
              exit();
         }
     }
-    if(empty($_SESSION['userId'])){
+    if( empty( $_SESSION['userId'] ) ){
       $errorLogin = "<span id=\"prodCodeErr\" class=\"helper-text red-text \" data-error=\"wrong\" data-success=\"right\">Грешна парола или потребителско име!</span>";
     }
   }

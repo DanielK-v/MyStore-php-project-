@@ -17,7 +17,7 @@ require 'inc/connection.php';
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <header>
   <nav>
-    <div class="nav-wrapper teal lighten-2">
+    <div class="nav-wrapper  #b71c1c red darken-4">
       <a  id="my-logo"href="index.php" class="brand-logo center">Моят Магазин</a>
       <ul id="navbar" class="right hide-on-med-and-down">
         <?php if( !isset( $_SESSION['userId'] ) && !isset( $_SESSION['username'] ) ){
@@ -40,10 +40,11 @@ require 'inc/connection.php';
   <a href=\"#\" data-target=\"slide-out\" class=\"sidenav-trigger\"><i class=\"material-icons\">menu</i></a>";
   }else{
     echo "<ul id=\"slide-out\" class=\"sidenav\">
+    <li><a href=\"index.php\">Моят Магазин</a></li>\"
     <li><a href=\"addProduct.php\" class=\"waves-effect\">Добави продукт</a></li>
     <li><a class=\"waves-effect\" href=\"logOut.php\">Излез</a></li>
   </ul>
-  <a href=\"#\" data-target=\"slide-out\" class=\"sidenav-trigger\"><i class=\"material-icons\">menu</i></a>";
+  <a href=\"#\" data-target=\"slide-out\" class=\"sidenav-trigger\"><i class=\"material-icons icon-menu\">menu</i></a>";
   }
   
   ?>

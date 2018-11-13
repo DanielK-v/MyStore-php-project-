@@ -41,7 +41,7 @@
                <label for="phone">Телефон за връзка</label>
            </div>
            <div class="center-align">
-             <button class="btn waves-effect waves-light" type="submit" name="register">Регистрирай
+             <button class="btn waves-effect waves-light #b71c1c red darken-4" type="submit" name="register">Регистрирай
                <i class="material-icons right">send</i>
              </button>
           </div>

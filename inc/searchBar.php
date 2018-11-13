@@ -6,7 +6,7 @@
                         <label for="search-field">Search</label>
                     </div> 
                     <div class="row col s6 ">
-                        <button class=" input-field btn waves-effect waves-light" type="submit" name="searchBtn">Търси
+                        <button class=" input-field btn waves-effect waves-light #b71c1c red darken-4" type="submit" name="searchBtn">Търси
                                 <i class="material-icons right">search</i>
                         </button>
                     </div>   

@@ -17,6 +17,7 @@ while($row = $result->fetch_assoc()){
   $price_two = $row["price_2"];
   $prodAmount = $row["prod_amount"];
   $prodCode = $row["prod_code"];
+  $image = $row["image"];
 }
 $result->close();
 require 'inc/editProductForm.php';

@@ -31,65 +31,69 @@ require 'searchBar.php';
             ORDER BY products.prod_id DESC";
             
     $result = $connection->query( $sql ) or die( $connection->error );
-
-    if(isset($userSearch) || !empty($userSearch)){
-        //Displaying searched results
-        $sql = "SELECT * 
-                FROM products 
-                INNER JOIN categories 
-                ON products.cat_id = categories.cat_id 
-                WHERE prod_code LIKE '%$userSearch%' 
-                OR prod_name LIKE '%$userSearch%' 
-                OR price_1 LIKE '%$userSearch%' 
-                OR price_2 LIKE '%$userSearch%'
-                OR prod_desc LIKE '%$userSearch%'
-                ORDER BY products.prod_id DESC";
-        $result = $connection->query( $sql ) or die( $connection->error );
-        
-        while( $row = $result->fetch_assoc() ) { 
-            echo "<tr>";
-            echo "<td>".$row["prod_name"]."</td>";
-            echo "<td>".$row["prod_desc"]."</td>";
-            echo "<td>".$row["price_1"]." лв."."</td>";
-            echo "<td>".$row["price_2"]." лв."."</td>";
-            echo "<td>".$row["prod_amount"]."</td>";
-            echo "<td>".$row["cat_name"]."</td>";
-            echo "<td>".$row["prod_code"]."</td>";
-            if(!empty( $row["image"] ) ){
-                echo "<td> <img src=\"uploads/".$row["image"]."\"width=\"50rem \"height=\"50rem\"></td>";  
-            }else{
-                echo "<td> <p>Няма снимка </p> </td>";
-            } 
-            echo "<td><a href='/delete.php?id=".urlEncode($row["prod_id"])."'><i class=\"small material-icons\">delete</i></a></td>";
-            echo "<td><a href='/edit.php?id=".urlEncode($row["prod_id"])."'><i class=\"small material-icons\">edit</i></a></td>";
-            echo "</tr>";
-        }
-        
-        $result->close();
-        
+    if($result->num_rows < 1){
+        echo"<h1>Няма записи в базата данни!</h1>";
     }else{
-        //Displaying all results
-        while ( $row = $result->fetch_assoc() ) {
-            echo "<tr>";
-            echo "<td>".$row["prod_name"]."</td>";
-            echo "<td>".$row["prod_desc"]."</td>";
-            echo "<td>".$row["price_1"]." лв."."</td>";
-            echo "<td>".$row["price_2"]." лв."."</td>";
-            echo "<td>".$row["prod_amount"]."</td>";
-            echo "<td>".$row["cat_name"]."</td>";
-            echo "<td>".$row["prod_code"]."</td>";
-            if(!empty( $row["image"] ) ){
-                echo "<td> <img src=\"uploads/".$row["image"]."\"width=\"50rem \"height=\"50rem\"></td>";  
-            }else{
-                echo "<td> <p>Няма снимка </p> </td>";
-            } 
-            echo "<td><a href='delete.php?id=".$row["prod_id"]."'><i class=\"small material-icons\">delete</i></a></td>";
-            echo "<td><a href='edit.php?id=".$row["prod_id"]."'><i class=\"small material-icons\">edit</i></a></td>";
-            echo "</tr>";
-        }
-        
-        $result->close();
-        }
+        if(isset($userSearch) || !empty($userSearch)){
+            //Displaying searched results
+            $sql = "SELECT * 
+                    FROM products 
+                    INNER JOIN categories 
+                    ON products.cat_id = categories.cat_id 
+                    WHERE prod_code LIKE '%$userSearch%' 
+                    OR prod_name LIKE '%$userSearch%' 
+                    OR price_1 LIKE '%$userSearch%' 
+                    OR price_2 LIKE '%$userSearch%'
+                    OR prod_desc LIKE '%$userSearch%'
+                    ORDER BY products.prod_id DESC";
+            $result = $connection->query( $sql ) or die( $connection->error );
+            
+            while( $row = $result->fetch_assoc() ) { 
+                echo "<tr>";
+                echo "<td>".$row["prod_name"]."</td>";
+                echo "<td>".$row["prod_desc"]."</td>";
+                echo "<td>".$row["price_1"]." лв."."</td>";
+                echo "<td>".$row["price_2"]." лв."."</td>";
+                echo "<td>".$row["prod_amount"]."</td>";
+                echo "<td>".$row["cat_name"]."</td>";
+                echo "<td>".$row["prod_code"]."</td>";
+                if(!empty( $row["image"] ) ){
+                    echo "<td> <img src=\"uploads/".$row["image"]."\"width=\"50rem \"height=\"50rem\"></td>";  
+                }else{
+                    echo "<td> <p>Няма снимка </p> </td>";
+                } 
+                echo "<td><a href='/delete.php?id=".urlEncode($row["prod_id"])."'><i class=\"small material-icons\">delete</i></a></td>";
+                echo "<td><a href='/edit.php?id=".urlEncode($row["prod_id"])."'><i class=\"small material-icons\">edit</i></a></td>";
+                echo "</tr>";
+            }
+            
+            $result->close();
+            
+        }else{
+            //Displaying all results
+            while ( $row = $result->fetch_assoc() ) {
+                echo "<tr>";
+                echo "<td>".$row["prod_name"]."</td>";
+                echo "<td>".$row["prod_desc"]."</td>";
+                echo "<td>".$row["price_1"]." лв."."</td>";
+                echo "<td>".$row["price_2"]." лв."."</td>";
+                echo "<td>".$row["prod_amount"]."</td>";
+                echo "<td>".$row["cat_name"]."</td>";
+                echo "<td>".$row["prod_code"]."</td>";
+                if(!empty( $row["image"] ) ){
+                    echo "<td> <img src=\"uploads/".$row["image"]."\"width=\"50rem \"height=\"50rem\"></td>";  
+                }else{
+                    echo "<td> <p>Няма снимка </p> </td>";
+                } 
+                echo "<td><a href='delete.php?id=".$row["prod_id"]."'><i class=\"small material-icons\">delete</i></a></td>";
+                echo "<td><a href='edit.php?id=".$row["prod_id"]."'><i class=\"small material-icons\">edit</i></a></td>";
+                echo "</tr>";
+            }
+            
+            $result->close();
+            }
+    }
+   
         $connection->close();
     ?>
     </table>

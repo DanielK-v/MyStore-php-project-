@@ -20,7 +20,7 @@ if( isset( $_POST["register"] ) ){
   if( $_SERVER["REQUEST_METHOD"] == "POST" ){
 
     $userName = test_input( $_POST["username"] );
-    $email  = test_input( $_POST["email"] );
+    $email  =  $_POST["email"];
     $userPassword = test_input( $_POST["password"] );
     $userPassword2 = test_input( $_POST["password2"] );
     $telephone = test_input( $_POST["phone"] );
@@ -36,9 +36,9 @@ if( isset( $_POST["register"] ) ){
   }
 
   // Check if email already exists
-  $result = $connection->query( "SELECT * from users" );
-  $row = $result->fetch_assoc();
-  if( $email == $row["email"] ){
+  $result = $connection->query("SELECT email FROM users WHERE email = '$email'");
+ 
+  if( $result->num_rows > 0 ){
     $errorEmail = "<span id=\"errorEmail\" class=\"helper-text red-text \" data-error=\"wrong\" data-success=\"right\">Този email, вече съществува!</span>";
     $result->free();
   }elseif( !filter_var($email, FILTER_VALIDATE_EMAIL) ){
@@ -50,9 +50,8 @@ if( isset( $_POST["register"] ) ){
   }
 
   // Check if username already exists
-  $result = $connection->query( "SELECT * from users" );
-  $row = $result->fetch_assoc();
-  if( $userName == $row["username"] ){
+  $result = $connection->query( "SELECT username FROM users WHERE username = '$userName'" );
+  if( $result->num_rows > 0 ){
     $errorUsername = "<span id=\"errorUsername\" class=\"helper-text red-text \" data-error=\"wrong\" data-success=\"right\">Това име, вече съществува!</span>";
     $result->free();
   }else{

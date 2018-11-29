@@ -23,17 +23,30 @@ require 'searchBar.php';
     
     //Setting encoding to utf8 so that Bulgarian words can be displayed correctly!
     $connection->query("set NAMES utf8");
+
+   
+    $page = isset($_GET["page"]) ?  (int)$_GET["page"] : 1;
+    $perPage = 2;// Records per page
+    $start = ($page > 1) ? ($page * $perPage) - $perPage : 0; // Positioning
     
     $sql = "SELECT *
             FROM products
             INNER JOIN categories
             ON products.cat_id = categories.cat_id
-            ORDER BY products.prod_id DESC";
-            
+            ORDER BY products.prod_id DESC
+            LIMIT $start, $perPage";
+   
     $result = $connection->query( $sql ) or die( $connection->error );
+
+    //Pager
+   
+    $total = $connection->query("SELECT * FROM products")->num_rows; // number of records in table
+    $pages = ceil($total/$perPage); // how many pages will have
+
     if($result->num_rows < 1){
         echo"<h1>Няма записи в базата данни!</h1>";
     }else{
+
         if(isset($userSearch) || !empty($userSearch)){
             //Displaying searched results
             $sql = "SELECT * 
@@ -45,8 +58,23 @@ require 'searchBar.php';
                     OR price_1 LIKE '%$userSearch%' 
                     OR price_2 LIKE '%$userSearch%'
                     OR prod_desc LIKE '%$userSearch%'
-                    ORDER BY products.prod_id DESC";
+                    ORDER BY products.prod_id DESC
+                    LIMIT $start, $perPage";
+
             $result = $connection->query( $sql ) or die( $connection->error );
+            
+            // number of searched records in table
+            $total = $connection->query( "SELECT * 
+            FROM products 
+            INNER JOIN categories 
+            ON products.cat_id = categories.cat_id 
+            WHERE prod_code LIKE '%$userSearch%' 
+            OR prod_name LIKE '%$userSearch%' 
+            OR price_1 LIKE '%$userSearch%' 
+            OR price_2 LIKE '%$userSearch%'
+            OR prod_desc LIKE '%$userSearch%'" )->num_rows; 
+
+            $pages = ceil($total/$perPage); // how many pages will have
             
             while( $row = $result->fetch_assoc() ) { 
                 echo "<tr>";
@@ -71,6 +99,8 @@ require 'searchBar.php';
             
         }else{
             //Displaying all results
+            // $total = $connection->query($sql)->num_rows; // number of records in table
+            // $pages = ceil($total/$perPage); // how many pages will have
             while ( $row = $result->fetch_assoc() ) {
                 echo "<tr>";
                 echo "<td>".$row["prod_name"]."</td>";
@@ -93,8 +123,15 @@ require 'searchBar.php';
             $result->close();
             }
     }
-   
+    
         $connection->close();
+
     ?>
     </table>
+
+    <?php 
+    for($i = 1; $i <= $pages; $i++ ){
+        echo '<a class="waves-effect" href="index.php?page='.$i.'">'.$i.'</a> ' ;
+      }
+    ?>
 </div>

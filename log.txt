@@ -1,0 +1,2 @@
+[03-Dec-2018 10:16:00 Europe/Berlin] PHP Warning:  require_once(Daniel.php): failed to open stream: No such file or directory in E:\USER\xampp\htdocs\store\index.php on line 9
+[03-Dec-2018 10:16:00 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'Daniel.php' (include_path='E:\USER\xampp\php\PEAR') in E:\USER\xampp\htdocs\store\index.php on line 9

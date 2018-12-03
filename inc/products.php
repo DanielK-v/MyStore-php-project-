@@ -90,8 +90,8 @@ require 'searchBar.php';
                 }else{
                     echo "<td> <p>Няма снимка </p> </td>";
                 } 
-                echo "<td><a href='/delete.php?id=".urlEncode($row["prod_id"])."'><i class=\"small material-icons\">delete</i></a></td>";
-                echo "<td><a href='/edit.php?id=".urlEncode($row["prod_id"])."'><i class=\"small material-icons\">edit</i></a></td>";
+                echo "<td><a href='delete.php?id=".urlEncode($row["prod_id"])."'><i class=\"small material-icons\">delete</i></a></td>";
+                echo "<td><a href='edit.php?id=".urlEncode($row["prod_id"])."'><i class=\"small material-icons\">edit</i></a></td>";
                 echo "</tr>";
             }
             

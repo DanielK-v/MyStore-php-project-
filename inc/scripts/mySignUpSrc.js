@@ -1,14 +1,14 @@
 window.onload = function (){
 
   //Remove error spans
-        var userNameInput =  document.getElementById("username");
-        var userNameErr = document.getElementById("errorUsername");
+        const userNameInput =  document.getElementById("username");
+        const userNameErr = document.getElementById("errorUsername");
 
-        var emailInput =  document.getElementById("email");
-        var emailErr = document.getElementById("errorEmail");
+        const emailInput =  document.getElementById("email");
+        const emailErr = document.getElementById("errorEmail");
 
-        var passwordInput =  document.getElementById("password");
-        var passwordErr = document.getElementById("errorPassword");
+        const passwordInput =  document.getElementById("password");
+        const passwordErr = document.getElementById("errorPassword");
 
         function removeUserNameError(){
           if(userNameErr !== null){

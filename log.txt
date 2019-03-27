@@ -1,2 +1,227 @@
 [03-Dec-2018 10:16:00 Europe/Berlin] PHP Warning:  require_once(Daniel.php): failed to open stream: No such file or directory in E:\USER\xampp\htdocs\store\index.php on line 9
 [03-Dec-2018 10:16:00 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'Daniel.php' (include_path='E:\USER\xampp\php\PEAR') in E:\USER\xampp\htdocs\store\index.php on line 9
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Notice:  Constant hostname already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 7
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:7
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Notice:  Constant user already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 8
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:8
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Notice:  Constant localhostpassword already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 9
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:9
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Notice:  Constant database already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 10
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:10
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Notice:  Undefined variable: hostName in E:\USER\xampp\htdocs\store\inc\connection.php on line 12
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Notice:  Undefined variable: user in E:\USER\xampp\htdocs\store\inc\connection.php on line 12
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Notice:  Undefined variable: localhostpassword in E:\USER\xampp\htdocs\store\inc\connection.php on line 12
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Notice:  Undefined variable: dataBase in E:\USER\xampp\htdocs\store\inc\connection.php on line 12
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:24:20 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP Notice:  Constant hostname already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 7
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:7
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP Notice:  Constant user already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 8
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:8
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP Notice:  Constant localhostpassword already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 9
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:9
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP Notice:  Constant database already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 10
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:10
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP Warning:  Use of undefined constant hostName - assumed 'hostName' (this will throw an Error in a future version of PHP) in E:\USER\xampp\htdocs\store\inc\connection.php on line 12
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP Warning:  Use of undefined constant dataBase - assumed 'dataBase' (this will throw an Error in a future version of PHP) in E:\USER\xampp\htdocs\store\inc\connection.php on line 12
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:00 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in E:\USER\xampp\htdocs\store\inc\connection.php on line 12
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   4. mysqli->__construct() E:\USER\xampp\htdocs\store\inc\connection.php:12
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  in E:\USER\xampp\htdocs\store\inc\connection.php on line 12
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   4. mysqli->__construct() E:\USER\xampp\htdocs\store\inc\connection.php:12
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in E:\USER\xampp\htdocs\store\inc\products.php on line 25
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   3. mysqli->query() E:\USER\xampp\htdocs\store\inc\products.php:25
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in E:\USER\xampp\htdocs\store\inc\products.php on line 39
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   3. mysqli->query() E:\USER\xampp\htdocs\store\inc\products.php:39
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP Warning:  main(): Couldn't fetch mysqli in E:\USER\xampp\htdocs\store\inc\products.php on line 39
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:03 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP Notice:  Constant hostname already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 7
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:7
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP Notice:  Constant user already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 8
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:8
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP Notice:  Constant localhostpassword already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 9
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:9
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP Notice:  Constant database already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 10
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:10
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP Warning:  Use of undefined constant dataBase - assumed 'dataBase' (this will throw an Error in a future version of PHP) in E:\USER\xampp\htdocs\store\inc\connection.php on line 12
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:17 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'database' in E:\USER\xampp\htdocs\store\inc\connection.php on line 12
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP   4. mysqli->__construct() E:\USER\xampp\htdocs\store\inc\connection.php:12
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in E:\USER\xampp\htdocs\store\inc\products.php on line 25
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP   3. mysqli->query() E:\USER\xampp\htdocs\store\inc\products.php:25
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in E:\USER\xampp\htdocs\store\inc\products.php on line 39
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP   3. mysqli->query() E:\USER\xampp\htdocs\store\inc\products.php:39
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP Warning:  main(): Couldn't fetch mysqli in E:\USER\xampp\htdocs\store\inc\products.php on line 39
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:18 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP Notice:  Constant hostname already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 7
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:7
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP Notice:  Constant user already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 8
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:8
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP Notice:  Constant localhostpassword already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 9
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:9
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP Notice:  Constant database already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 10
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:25:41 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:10
+[27-Mar-2019 17:26:28 Europe/Berlin] PHP Notice:  Constant hostname already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 7
+[27-Mar-2019 17:26:28 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:26:28 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:26:28 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:26:28 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:26:28 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:7
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP Notice:  Constant user already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 8
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:8
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP Notice:  Constant localhostpassword already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 9
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:9
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP Notice:  Constant database already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 10
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:26:29 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:10
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP Notice:  Constant hostname already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 7
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:7
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP Notice:  Constant user already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 8
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:8
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP Notice:  Constant localhostpassword already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 9
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:9
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP Notice:  Constant database already defined in E:\USER\xampp\htdocs\store\inc\connection.php on line 10
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP Stack trace:
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   1. {main}() E:\USER\xampp\htdocs\store\index.php:0
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   2. require() E:\USER\xampp\htdocs\store\index.php:49
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   3. require() E:\USER\xampp\htdocs\store\inc\products.php:2
+[27-Mar-2019 17:26:35 Europe/Berlin] PHP   4. define() E:\USER\xampp\htdocs\store\inc\connection.php:10

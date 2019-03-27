@@ -1,6 +1,5 @@
 <?php
 require_once 'header.php';
-require 'inc/connection.php';
 require 'inc/helpers.php';
 
 header('Content-Type: text/html; charset=utf-8');

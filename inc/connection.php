@@ -1,10 +1,11 @@
 <?php
-$hostName = "localhost";
-$user = "root";
-$localhostpassword = "";
-$dataBase = "storedb";
 
-$connection = new mysqli($hostName, $user, $localhostpassword, $dataBase);
+define("hostname", "localhost");
+define("user", "root");
+define("localhostpassword", "");
+define("database", "storedb");
+
+$connection = new mysqli(hostname, user, localhostpassword, database);
 
 if($connection -> connect_error){
   echo "Error, while connectiong to db";

@@ -1,11 +1,11 @@
 <?php
 require 'header.php';
-require 'inc/connection.php';
 require 'inc/helpers.php';
-if( isset($_SESSION['userId'])){
+
+if( isset( $_SESSION['userId'] ) ){
   $prodCodeErr = "";
   $msg = "";
-if(isset($_POST['add-product-btn'])){
+if( isset( $_POST['add-product-btn'] ) ){
   $productName = test_input( $_POST['product-name'] );
   $productDesc = test_input( $_POST['product-desc'] );
   $priceFirst = test_input( $_POST['price-first'] );
@@ -48,4 +48,4 @@ if(isset($_POST['add-product-btn'])){
     <p>Пренасочване към форма за регистрация... </p>";
     header("refresh:3;url=signUp.php"); // redirecting the user to a SignUp.php
   }
- ?>
+?>

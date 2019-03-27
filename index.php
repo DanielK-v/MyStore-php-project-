@@ -1,6 +1,5 @@
 <?php
 require 'header.php';
-require 'inc/connection.php';
 require 'inc/helpers.php';
 
 ini_set('display_errors', 1);

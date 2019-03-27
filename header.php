@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'inc/connection.php';
+require_once 'inc/connection.php';
 ?>
 <!DOCTYPE html>
 <html lang="bg">
@@ -31,7 +31,7 @@ require 'inc/connection.php';
       </ul>
     </div>
   </nav>
-  <?php 
+  <?php
   if(( !isset( $_SESSION["userId"] ) && !isset( $_SESSION["username"] ) ) ){
     echo "<ul id=\"slide-out\" class=\"sidenav\">
     <li><a href=\"signUp.php\" class=\"waves-effect\">Регистрация</a></li>
@@ -46,7 +46,7 @@ require 'inc/connection.php';
   </ul>
   <a href=\"#\" data-target=\"slide-out\" class=\"sidenav-trigger\"><i class=\"material-icons icon-menu\">menu</i></a>";
   }
-  
+
   ?>
 
 </header>

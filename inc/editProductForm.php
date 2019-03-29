@@ -1,37 +1,37 @@
 <script type="text/javascript" src="inc/scripts/editProductSrc.js"></script>
  <div class="container">
    <div class="card">
-     <form class="col s6" method="post" action=<?php echo"update.php?id=".urlEncode($id);?> enctype="multipart/form-data">
+     <form class="col s6" method="post" action=<?php echo "update.php?id=" . urlEncode($id); ?> enctype="multipart/form-data">
 
          <div class="input-field col s6">
-           <input id="edit-product-name" type="text" class="validate" name="edit-product-name" maxlength="50" value=<?php echo $prodName?> required>
+           <input id="edit-product-name" type="text" class="validate" name="edit-product-name" maxlength="50" value=<?php echo $prodName ?> required>
            <label for="edit-product-name">Продукт</label>
          </div>
 
          <div class="input-field col s6">
-           <textarea id="edit-product-desc" class="materialize-textarea" name="edit-product-desc"><?php echo $prodDesc?></textarea>
+           <textarea id="edit-product-desc" class="materialize-textarea" name="edit-product-desc"><?php echo $prodDesc ?></textarea>
            <label for="edit-product-desc">Описание на продукт</label>
          </div>
 
           <div class="input-field col s6">
-             <input id="edit-price-first" type="number" class="validate" name="edit-price-first" min="0" step="any" value=<?php echo $price_one?> required>
+             <input id="edit-price-first" type="number" class="validate" name="edit-price-first" min="0" step="any" value=<?php echo $price_one ?> required>
              <label for="edit-price-first">Цена на закупуване</label>
           </div>
 
           <div class="input-field col s6">
-             <input id="edit-price-second" type="number" class="validate" name="edit-price-second" min="0" step="any" value=<?php echo $price_two?> required>
+             <input id="edit-price-second" type="number" class="validate" name="edit-price-second" min="0" step="any" value=<?php echo $price_two ?> required>
              <label for="edit-price-second">Цена на продаване</label>
           </div>
 
           <div class="input-field col s6">
-             <input id="edit-product-amount" type="number" class="validate" name="edit-product-amount" min="0" step="1" value=<?php echo $prodAmount?> required>
+             <input id="edit-product-amount" type="number" class="validate" name="edit-product-amount" min="0" step="1" value=<?php echo $prodAmount ?> required>
              <label for="product-amount">Количество</label>
           </div>
 
           <div class="input-field col s6">
-            <input id="edit-product-code" type="text" class="validate" name="edit-product-code" maxlength="10" value=<?php echo $prodCode?> required>
+            <input id="edit-product-code" type="text" class="validate" name="edit-product-code" maxlength="10" value=<?php echo $prodCode ?> required>
             <label for="edit-product-code">Код на продукт</label>
-            <?php echo $prodCodeErr;  ?>
+            <?php echo $prodCodeErr; ?>
           </div>
 
           <div class="input-field col s12 m6">

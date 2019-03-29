@@ -20,34 +20,34 @@ require_once 'inc/connection.php';
     <div class="nav-wrapper  #b71c1c red darken-4">
       <a  id="my-logo"href="index.php" class="brand-logo center">Моят Магазин</a>
       <ul id="navbar" class="right hide-on-med-and-down">
-        <?php if( !isset( $_SESSION['userId'] ) && !isset( $_SESSION['username'] ) ){
-          echo "<li><a href=\"signUp.php\">Регистрация</a></li>";
-          echo "<li><a href=\"index.php\">Влез</a></li>";
-        }else{
-          echo "<li><a href=\"addProduct.php\">Добави продукт</a></li>";
-          echo "<li><a href=\"logOut.php\">Излез</a></li>";
-        }
-         ?>
+        <?php if (!isset($_SESSION['userId']) && !isset($_SESSION['username'])) {
+    echo "<li><a href=\"signUp.php\">Регистрация</a></li>";
+    echo "<li><a href=\"index.php\">Влез</a></li>";
+} else {
+    echo "<li><a href=\"addProduct.php\">Добави продукт</a></li>";
+    echo "<li><a href=\"logOut.php\">Излез</a></li>";
+}
+?>
       </ul>
     </div>
   </nav>
   <?php
-  if(( !isset( $_SESSION["userId"] ) && !isset( $_SESSION["username"] ) ) ){
+if ((!isset($_SESSION["userId"]) && !isset($_SESSION["username"]))) {
     echo "<ul id=\"slide-out\" class=\"sidenav\">
     <li><a href=\"signUp.php\" class=\"waves-effect\">Регистрация</a></li>
     <li><a class=\"waves-effect\" href=\"index.php\">Влез</a></li>
   </ul>
   <a href=\"#\" data-target=\"slide-out\" class=\"sidenav-trigger\"><i class=\"material-icons\">menu</i></a>";
-  }else{
+} else {
     echo "<ul id=\"slide-out\" class=\"sidenav\">
     <li><a href=\"index.php\">Моят Магазин</a></li>\"
     <li><a href=\"addProduct.php\" class=\"waves-effect\">Добави продукт</a></li>
     <li><a class=\"waves-effect\" href=\"logOut.php\">Излез</a></li>
   </ul>
   <a href=\"#\" data-target=\"slide-out\" class=\"sidenav-trigger\"><i class=\"material-icons icon-menu\">menu</i></a>";
-  }
+}
 
-  ?>
+?>
 
 </header>
 

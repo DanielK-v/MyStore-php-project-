@@ -33,7 +33,7 @@
               <i class="material-icons prefix">lock</i>
               <input id="password2" type="password" class="validate" name="password2" minlength="6" maxlength="20" required>
               <label for="password2">Повтори парола</label>
-              <?php echo $errorPassword;?>
+              <?php echo $errorPassword; ?>
            </div>
            <div class="input-field col s6">
                <i class="material-icons prefix">phone</i>

@@ -31,7 +31,7 @@
           <div class="input-field col s6">
             <input id="product-code" type="text" class="validate" name="product-code" maxlength="10" required>
             <label for="product-code">Код на продукт</label>
-            <?php echo $prodCodeErr;  ?>
+            <?php echo $prodCodeErr; ?>
           </div>
 
           <div class="input-field col s12 m6">
